@@ -1,5 +1,5 @@
 {
-    "name": "naif/toggle-switch-field",
+    "name": "pimoudeveldhuis/toggle-switch-field",
     "description": "A Toggle Switch Field for Nova 4.",
     "keywords": [
         "laravel",
@@ -10,7 +10,7 @@
         "switch",
         "toggle-switch"
     ],
-    "homepage": "https://github.com/naifalshaye/toggle-switch-field",
+    "homepage": "https://github.com/pimoudeveldhuis/toggle-switch-field",
     "license": "MIT",
     "authors": [
         {
@@ -31,13 +31,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Naif\\ToggleSwitchField\\": "src/"
+            "PimOudeVeldhuis\\ToggleSwitchField\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Naif\\ToggleSwitchField\\FieldServiceProvider"
+                "PimOudeVeldhuis\\ToggleSwitchField\\FieldServiceProvider"
             ]
         }
     },

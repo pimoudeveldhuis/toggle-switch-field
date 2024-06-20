@@ -1,13 +1,12 @@
 <?php
 
-namespace Naif\ToggleSwitchField;
+namespace PimOudeVeldhuis\ToggleSwitchField;
 
 use Illuminate\Support\ServiceProvider;
 use Laravel\Nova\Events\ServingNova;
 use Laravel\Nova\Http\Middleware\Authenticate;
 use Laravel\Nova\Nova;
 use Illuminate\Support\Facades\Route;
-use Naif\SentryChatgpt\Http\Middleware\Authorize;
 
 class FieldServiceProvider extends ServiceProvider
 {
@@ -53,8 +52,8 @@ class FieldServiceProvider extends ServiceProvider
         }
 
         Route::middleware(['nova'])
-            ->namespace('Naif\toggle-switch-field\Http\Controllers')
-            ->prefix('naif/toggle-switch-field')
+            ->namespace('PimOudeVeldhuis\toggle-switch-field\Http\Controllers')
+            ->prefix('pimoudeveldhuis/toggle-switch-field')
             ->group(__DIR__.'/../routes/api.php');
     }
 }

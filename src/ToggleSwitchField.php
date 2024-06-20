@@ -1,11 +1,14 @@
 <?php
 
-namespace Naif\ToggleSwitchField;
+namespace PimOudeVeldhuis\ToggleSwitchField;
 
 use Laravel\Nova\Fields\Field;
+use Laravel\Nova\Fields\SupportsDependentFields;
 
 class ToggleSwitchField extends Field
 {
+    use SupportsDependentFields;
+
     /**
      * The field's component.
      *
@@ -47,6 +50,13 @@ class ToggleSwitchField extends Field
     {
         return $this->withMeta([
             'detail_toggle' => $show
+        ]);
+    }
+
+    public function formToggle($show)
+    {
+        return $this->withMeta([
+            'form_toggle' => $show
         ]);
     }
 }

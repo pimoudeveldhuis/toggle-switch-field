@@ -1,5 +1,5 @@
 <?php
-namespace Naif\ToggleSwitchField\Http\Controllers;
+namespace PimOudeVeldhuis\ToggleSwitchField\Http\Controllers;
 
 use Illuminate\Support\Facades\DB;
 use Laravel\Nova\Http\Requests\NovaRequest;

@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use \Naif\ToggleSwitchField\Http\Controllers\ToggleController;
+use \PimOudeVeldhuis\ToggleSwitchField\Http\Controllers\ToggleController;
 /*
 |--------------------------------------------------------------------------
 | Tool API Routes

@@ -89,7 +89,7 @@ export default {
                 'new_value': !this.new_value,
                 'resource': this.resource
             }
-            Nova.request().post('/naif/toggle-switch-field/update-toggle', data)
+            Nova.request().post('/pimoudeveldhuis/toggle-switch-field/update-toggle', data)
                 .then(function (response) {
 
                 }.bind(this))

@@ -1,8 +1,5 @@
 ### Toggle Switch Field for Nova 4
 
-For Toggle Switch Field for Nova 3 go to
-https://github.com/naifalshaye/toggle-switch
-
 ## Features:
  - Set custom color using hex color code
  - Toggle or Icon align. Default (left)
@@ -18,7 +15,7 @@ https://github.com/naifalshaye/toggle-switch
 You can install the package into a Laravel app that uses Nova via composer:
 
 ```bash
-composer require naif/toggle-switch-field
+composer require pimoudeveldhuis/toggle-switch-field
 ```
 
 ## Usage
@@ -37,6 +34,7 @@ Add the field to Nova Resource
                 ->toggleAlign('center')
                 ->indexToggle(false)
                 ->detailToggle(false),
+                ->formToggle(true),
         ];
     }
 ```
