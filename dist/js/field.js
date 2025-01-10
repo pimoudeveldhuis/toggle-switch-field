@@ -20976,7 +20976,7 @@ __webpack_require__.r(__webpack_exports__);
   props: ['index', 'resource', 'resourceName', 'resourceId', 'field'],
   data: function data() {
     return {
-      new_value: this.field.value
+      new_value: Number(this.field.value)
     };
   },
   computed: {
@@ -21065,7 +21065,7 @@ __webpack_require__.r(__webpack_exports__);
   props: ['resource', 'resourceName', 'field'],
   data: function data() {
     return {
-      new_value: this.field.value
+      new_value: Number(this.field.value)
     };
   },
   computed: {
