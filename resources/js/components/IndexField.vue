@@ -51,6 +51,7 @@ export default {
             var data = {
                 'resource_id': this.resource.id.value,
                 'resource_name': this.resourceName,
+                'field_id': this.field.attribute,
                 'old_value': this.field.value,
                 'new_value': !this.new_value,
                 'resource': this.resource

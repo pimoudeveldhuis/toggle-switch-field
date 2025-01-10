@@ -70,6 +70,7 @@ export default {
             } else{
                 field_value = 0;
             }
+
             formData.append(this.fieldAttribute, field_value || 0)
         },
 

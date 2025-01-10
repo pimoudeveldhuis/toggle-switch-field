@@ -2,6 +2,7 @@
 namespace PimOudeVeldhuis\ToggleSwitchField\Http\Controllers;
 
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Log;
 use Laravel\Nova\Http\Requests\NovaRequest;
 use Laravel\Nova\Nova;
 
@@ -16,15 +17,7 @@ class ToggleController
         }
 
         $table = $this->getTableName($request->resource_name);
-
-        foreach ($request->resource['fields'] as $field) {
-            if (isset($field['component']) && $field['component'] === 'toggle-switch-field') {
-                $column = $field['attribute'] ?? null;
-                break;
-            }
-        }
-
-        $update = DB::table($table)->where('id', $request->resource_id)->update([$column => $request->new_value]);
+        $update = DB::table($table)->where('id', $request->resource_id)->update([$request->field_id => $request->new_value]);
 
     }
 
